@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: impostor-game        # dowolna nazwa usługi
+    env: node
+    region: frankfurt          # najbliżej PL
+    plan: free                 # darmowy plan
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    healthCheckPath: /
